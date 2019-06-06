@@ -1002,6 +1002,8 @@ void cv::calcHist( const Mat* images, int nimages, const int* channels,
         calcHist_8u(ptrs, deltas, imsize, ihist, dims, ranges, _uniranges, uniform );
     else if( depth == CV_16U )
         calcHist_<ushort>(ptrs, deltas, imsize, ihist, dims, ranges, _uniranges, uniform );
+    else if( depth == CV_16S )
+        calcHist_<short>(ptrs, deltas, imsize, ihist, dims, ranges, _uniranges, uniform );
     else if( depth == CV_32F )
         calcHist_<float>(ptrs, deltas, imsize, ihist, dims, ranges, _uniranges, uniform );
     else
