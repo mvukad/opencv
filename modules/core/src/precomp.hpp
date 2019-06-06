@@ -322,7 +322,7 @@ struct CoreTLSData
 {
     CoreTLSData() :
 //#ifdef HAVE_OPENCL
-        device(0), useOpenCL(-1),
+        device(0), useOpenCL(0),
 //#endif
         useIPP(-1),
         useIPP_NE(-1)
